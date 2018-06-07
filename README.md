@@ -25,7 +25,7 @@
    python main.py
    ```
 
-4. The output xml files will in the same folder of main.py, named by Journal name, like GenomeBiology.rss.xml, the *.pk file is cache which prevent outpu.ting same article when updating
+4. The output xml files will in the same folder of main.py, named by Journal name, like GenomeBiology.rss.xml, the *.pk file is cache which prevent outputing same article when updating
 
 5. You can use **crontab** command to run the program automatically.
 

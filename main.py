@@ -6,6 +6,12 @@ import requests
 import pickle
 import os
 
+def keyword_filter():
+    pass
+
+def topic_filter():
+    pass
+
 def generate_feed( journal_Id ):
 
     response = urllib2.urlopen("https://www.readbyqxmd.com/journal/%s" % journal_Id)
@@ -75,7 +81,10 @@ def generate_feed( journal_Id ):
         pickle.dump(records, handle)
 
 if __name__ == '__main__':
-    journal_list = [35114, 42959, 32413, 24515, 40701]
+    # 32162 Nature Medicine
+    # 32477 Nature Biotechology
+    # 31754 Cell Research
+    journal_list = [35114, 42959, 32413, 24515, 40701, 32162, 32477, 31754]
     for code in journal_list:
         generate_feed(code)
     
